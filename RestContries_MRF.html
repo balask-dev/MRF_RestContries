@@ -27,18 +27,17 @@
         //population_Reduce 
         var conPop = data.reduce((i, con) => i + con.population, 0);
         console.log("Population-" + conPop);
-
         data.forEach((cont) => {
-         console.log(cont.name + cont.flag + cont.capital);
+        console.log(cont.name + cont.flag + cont.capital);
         });
+        
         //usd_currency
         var usd_cur = data.filter((cur) => {
           for (let i = 0; i < cur.currencies.length; i++) {
             if (cur.currencies[i].code === "USD") {
               return cur;
-            }
-          }
-        });
+            }}
+           });
         //usd_contries
         var usd_con = usd_cur.map((usdcon) => usdcon.name);
         console.log(usd_con);
