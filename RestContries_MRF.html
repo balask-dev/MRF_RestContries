@@ -25,7 +25,7 @@
         console.log(cont_population);
         
         //population_Reduce 
-        var conPop = data.reduce((i, con) => i + con.population, 0);
+        var conPop = data.reduce((i, con) => i + con.population);
         console.log("Population-" + conPop);
         data.forEach((cont) => {
         console.log(cont.name + cont.flag + cont.capital);
