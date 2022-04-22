@@ -33,7 +33,7 @@
         
         //usd_currency
         var usd_cur = data.filter((cur) => {
-          for (let i = 0; i < cur.currencies.length; i++) {
+          for (var i = 0; i < cur.currencies.length; i++) {
             if (cur.currencies[i].code === "USD") {
               return cur;
             }}
